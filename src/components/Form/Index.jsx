@@ -109,7 +109,7 @@ const Form = () => {
     decorator.style.opacity = "1";
     decorator.style.transform = "translateX(0%)";
   };
-  
+
   const handleMouseLeave = () => {
     const decorator = emailDecorationRef.current.querySelector("div");
     decorator.style.transform = "translateX(100%)";
@@ -123,7 +123,12 @@ const Form = () => {
     <div className="form-body">
       <form action="submit" onSubmit={handleSubmit}>
         <div>
-          <h2>{"Let's talk"} <span><Arrow/></span> </h2>
+          <h2>
+            {"Let's talk"}{" "}
+            <span>
+              <Arrow />
+            </span>{" "}
+          </h2>
         </div>
         <div>
           <label htmlFor="name">Name</label>
@@ -167,7 +172,10 @@ const Form = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="mailto:heisjuanda@gmail.com"> heisjuanda@gmail.com</a>{" "}
+          <a href="mailto:patrickjjarise@gmail.com">
+            {" "}
+            patrickjjarise@gmail.com
+          </a>{" "}
           <div></div>
         </h1>
         <span>{"Let's create amazing stuff!"}</span>
@@ -186,7 +194,7 @@ const Form = () => {
           <li>
             <h6>
               <a
-                href="https://github.com/heisjuanda"
+                href="https://github.com/clroyale"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -194,7 +202,7 @@ const Form = () => {
               </a>
             </h6>
           </li>
-          <li>
+          {/* <li>
             <h6>
               <a
                 href="https://www.instagram.com/heisjuanda/"
@@ -204,7 +212,7 @@ const Form = () => {
                 Instagram
               </a>
             </h6>
-          </li>
+          </li> */}
           <li>
             <h6>
               <a
