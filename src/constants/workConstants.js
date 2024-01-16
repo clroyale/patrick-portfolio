@@ -15,7 +15,7 @@ import programLanguageDetailsMB from "../assets/images/program-language/programL
 import programLanguageDetailFont from "../assets/images/program-language/programLanguageFont.webp";
 
 // PORTFOLIO
-import portfolioMain from "../assets/images/portfolio/heisjuandaLogo.webp";
+import portfolioMain from "../assets/images/portfolio/patrickLogo.webp";
 import portfolioDemo from "../assets/images/portfolio/portfolioDemo.webp";
 import portfolioDetailsPC from "../assets/images/portfolio/portfolioDetailsPC.webp";
 import portfolioDetailsMB from "../assets/images/portfolio/portfolioDetailsMB.webp";
@@ -129,7 +129,7 @@ export const WORK_PROJECTS = [
     ],
     tech: [`racket - scheme 8.6`, `eopl 8.6`, `sllgen 1.0`],
     techStack: [RACKET, SCHEMEL],
-    repo: "https://github.com/heisjuanda/Program-language",
+    repo: "https://github.com/clroyale/Program-language",
     isMine: true,
   },
   {
@@ -144,7 +144,7 @@ export const WORK_PROJECTS = [
     details: [portfolioDetailsPC, portfolioDetailsMB, portfolioDetailsFont],
     tech: [`react 18.2.0`, `vite 4.3.9`, `gsap 3.11.5`, `matter.js 0.19.0`],
     techStack: [REACT, VITE, GSAP, HTML, CSS, JS, MATTER],
-    repo: "https://github.com/heisjuanda/portfolio",
+    repo: "https://github.com/clroyale/portfolio",
     isMine: true,
   },
   {

@@ -60,7 +60,7 @@ const Project = () => {
     }, 501);
     setTimeout(() => {
       setIsDisabled(false);
-    }, 1001)
+    }, 1001);
   };
 
   useEffect(() => {
@@ -108,7 +108,7 @@ const Project = () => {
                 <img
                   src={checked}
                   className="disappear"
-                  alt="this project was made by heisjuanda (not apply for projects made in heisjuanda's job)"
+                  alt="this project was made by patrick (not apply for projects made in patrick's job)"
                 />
               )}
             </h1>
@@ -124,7 +124,7 @@ const Project = () => {
                   })}
               </span>
             </h4>
-          )} 
+          )}
         </header>
         <article className="disappear">
           {currentProject?.description && (
