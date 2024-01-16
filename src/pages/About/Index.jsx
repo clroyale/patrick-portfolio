@@ -8,8 +8,8 @@ import CurrentSection from "../../components/CurrentSection/Index";
 
 import { updateLoadingStatus } from "../../localStorage/localStorage";
 import {
-  HEISJUANDA_PICTURES,
-  HEISJUANDA_DESCRIPTION,
+  PATRICK_PICTURES,
+  PATRICK_DESCRIPTION,
 } from "../../constants/aboutConstants";
 
 import "./About.css";
@@ -20,7 +20,7 @@ const About = () => {
   useEffect(() => {
     updateLoadingStatus(false);
     setIsLoading(false);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -30,21 +30,21 @@ const About = () => {
         <header>
           <h2>Who is he?</h2>
           <p>
-            Simple, he is <span>JuanDa!</span>
+            Simple, he is <span>Patrick!</span>
           </p>
         </header>
         <article>
           <div>
             <div></div>
-            {HEISJUANDA_DESCRIPTION && <p>{HEISJUANDA_DESCRIPTION}</p>}
+            {PATRICK_PICTURES && <p>{PATRICK_DESCRIPTION}</p>}
           </div>
           <ul>
-            {Array.isArray(HEISJUANDA_PICTURES) &&
-              HEISJUANDA_PICTURES.map((picture) => (
+            {Array.isArray(PATRICK_PICTURES) &&
+              PATRICK_PICTURES.map((picture) => (
                 <li key={picture}>
                   <LazyLoadImage
                     src={picture}
-                    alt="pictire about Juan David Moreno Alfonso (heisjuanda)"
+                    alt="pictire about Juan David Moreno Alfonso (patrick)"
                     effect="blur"
                   />
                 </li>
