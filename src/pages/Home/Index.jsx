@@ -7,7 +7,7 @@ import { PortfolioContext } from "../../context/PortfolioContext";
 
 import { updateLoadingStatus } from "../../localStorage/localStorage";
 
-import pic from "../../assets/images/heisjuanda/contratando.webp";
+import pic from "../../assets/images/patrick/patrickImg.jpeg";
 
 import "./Home.css";
 
@@ -23,7 +23,7 @@ const Home = () => {
       homeSectionRef.current.style.opacity = "1";
     }, 2400);
     if (!isLoading) homeSectionRef.current.style.opacity = "1";
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -32,11 +32,11 @@ const Home = () => {
       <section ref={homeSectionRef} className="home-section__container">
         <header>
           <h1>
-            He is JuanDa <span>Your favorite Front-end developer.</span>
+            Patrick <span>Your favorite Front-end developer.</span>
           </h1>
         </header>
         <article>
-          <img src={pic} alt="heisjuanda picture" loading="eager"/>
+          <img src={pic} alt="patrick picture" loading="eager" />
         </article>
       </section>
       {isLoading && <HomeLoader />}
