@@ -3,15 +3,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { PortfolioContext } from "../../context/PortfolioContext";
-
 import CurrentSection from "../../components/CurrentSection/Index";
-
 import { updateLoadingStatus } from "../../localStorage/localStorage";
 import {
   PATRICK_PICTURES,
   PATRICK_DESCRIPTION,
 } from "../../constants/aboutConstants";
-
 import "./About.css";
 
 const About = () => {

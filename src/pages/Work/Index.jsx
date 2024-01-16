@@ -3,13 +3,9 @@ import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 
 import { PortfolioContext } from "../../context/PortfolioContext";
-
 import CurrentSection from "../../components/CurrentSection/Index";
-
 import { updateLoadingStatus } from "../../localStorage/localStorage";
-
 import { WORK_PROJECTS } from "../../constants/workConstants";
-
 import "./Work.css";
 
 const Work = () => {
@@ -32,7 +28,7 @@ const Work = () => {
       scale: "0",
       ease: "power2.inOut",
     });
-    
+
     setTimeout(() => {
       history(`/work/${project.handle}`);
     }, 1001);
@@ -77,7 +73,7 @@ const Work = () => {
     return () => {
       window.removeEventListener("scroll", setScale);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -5,22 +5,16 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import gsap from "gsap";
 
 import { PortfolioContext } from "../../context/PortfolioContext";
-
 import CurrentSection from "../../components/CurrentSection/Index";
 import Button from "../../components/Button/Index";
-
 import { TechStack } from "../../components/TechStack/Index";
-
 import { updateLoadingStatus } from "../../localStorage/localStorage";
 import {
   getNextProject,
   getPreviousProject,
 } from "../../helpers/getNextProject";
-
 import useProject from "../../hooks/useProject";
-
 import checked from "/icons/checkProject.png";
-
 import "./Project.css";
 
 const Project = () => {

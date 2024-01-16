@@ -1,12 +1,9 @@
 import { useEffect, useContext } from "react";
 
 import { PortfolioContext } from "../../context/PortfolioContext";
-
 import CurrentSection from "../../components/CurrentSection/Index";
 import Form from "../../components/Form/Index";
-
 import { updateLoadingStatus } from "../../localStorage/localStorage";
-
 import "./Talk.css";
 
 const Talk = () => {
@@ -15,9 +12,9 @@ const Talk = () => {
   useEffect(() => {
     updateLoadingStatus(false);
     setIsLoading(false);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  
+
   return (
     <main className="talk-section">
       <CurrentSection />
